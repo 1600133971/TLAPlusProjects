@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>hanoi1</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>toolbox.builder.TLAParserBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>toolbox.natures.TLANature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Bits.tla</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/Bits.tla</locationURI>
+		</link>
+		<link>
+			<name>hanoi1.tla</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/hanoi1.tla</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
