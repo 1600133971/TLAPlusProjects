@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>tlcExtTrace</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>toolbox.builder.TLAParserBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>toolbox.natures.TLANature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>TLCExt.tla</name>
+			<type>1</type>
+			<location>C:/toolbox/projects/TLCExt.tla</location>
+		</link>
+		<link>
+			<name>tlcExtTrace.tla</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/tlcExtTrace.tla</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>

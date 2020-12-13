@@ -1,0 +1,109 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.15 of Day Month 20?? (rev: e389d55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 93 and seed 3158177890931578761 with 6 workers on 12 cores with 1211MB heap and 2721MB offheap memory [pid: 18072] (Windows 10 10.0 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file C:\toolbox\projects\consensus.toolbox\consensus\MC.tla
+Parsing file C:\toolbox\projects\consensus.toolbox\consensus\consensus.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202011242241\tla2sany\StandardModules\TLC.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202011242241\tla2sany\StandardModules\Naturals.tla
+Parsing file C:\cygwin\usr\local\lib\tlaps\FiniteSets.tla
+Parsing file C:\cygwin\usr\local\lib\tlaps\TLAPS.tla
+Parsing file C:\cygwin\usr\local\lib\tlaps\FiniteSetTheorems.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202011242241\tla2sany\StandardModules\Integers.tla
+Parsing file C:\toolbox\projects\consensus.toolbox\consensus\Functions.tla
+Parsing file C:\cygwin\usr\local\lib\tlaps\WellFoundedInduction.tla
+Parsing file C:\cygwin\usr\local\lib\tlaps\NaturalsInduction.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202011242241\tla2sany\StandardModules\Sequences.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLAPS
+Semantic processing of module Integers
+Semantic processing of module Functions
+Semantic processing of module NaturalsInduction
+Semantic processing of module WellFoundedInduction
+Semantic processing of module FiniteSetTheorems
+Semantic processing of module consensus
+Semantic processing of module TLC
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2020-12-12 16:58:27)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2020-12-12 16:58:27.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2114:1 @!@!@
+Deadlock reached.
+@!@!@ENDMSG 2114 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+chosen = {}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <Next line 10, col 5 to line 11, col 37 of module consensus>
+chosen = {1}
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2020-12-12 16:58:27
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 7, col 1 to line 7, col 4 of module consensus>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 7, col 9 to line 7, col 19 of module consensus: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Next line 9, col 1 to line 9, col 4 of module consensus>: 3:6
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 10, col 8 to line 10, col 18 of module consensus: 7
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 10, col 8 to line 10, col 13 of module consensus: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 10, col 17 to line 10, col 18 of module consensus: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 11, col 25 to line 11, col 37 of module consensus: 6
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 11, col 17 to line 11, col 21 of module consensus: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<Inv line 15, col 1 to line 15, col 3 of module consensus>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 16, col 5 to line 18, col 33 of module consensus: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(2) at 2020-12-12 16:58:27: 4 states generated (304 s/min), 4 distinct states found (304 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+4 states generated, 4 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 2.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 792ms at (2020-12-12 16:58:27)
+@!@!@ENDMSG 2186 @!@!@
