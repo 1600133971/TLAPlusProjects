@@ -1,18 +1,15 @@
 ------------------------- MODULE dieharder_pluscal -------------------------
-EXTENDS Naturals
+EXTENDS Naturals, FunctionsExt
 
 CONSTANT Jug,      \* The set of all jugs.
          Capacity, \* A function, where Capacity[j] is the capacity of jug j.
          Goal      \* The quantity of water our heros must measure.
-         
-Min(m,n) == IF m < n THEN m ELSE n
 
 (*
 --algorithm dieharder_pluscal {
   variables contents = [j \in Jug |-> 0];
   {
-    while (TRUE)
-    {
+    while (TRUE) {
       with (j \in Jug) {
         either contents[j] := Capacity[j]
         or     contents[j] := 0
@@ -48,5 +45,5 @@ TypeOK == contents \in [Jug -> Nat]
 NotSolved == \A j \in Jug : contents[j] # Goal
 =============================================================================
 \* Modification History
-\* Last modified Thu Dec 17 22:36:40 CST 2020 by Administrator
+\* Last modified Thu Dec 17 23:15:54 CST 2020 by Administrator
 \* Created Thu Dec 17 21:31:10 CST 2020 by Administrator

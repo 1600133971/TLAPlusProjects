@@ -1,14 +1,11 @@
 -------------------------- MODULE diehard_pluscal --------------------------
-EXTENDS Naturals
-
-Min(m,n) == IF m < n THEN m ELSE n
+EXTENDS Naturals, FunctionsExt
 
 (*
 --algorithm diehard_pluscal {
   variables big = 0, small = 0;
   {
-    while (TRUE)
-    {
+    while (TRUE) {
       either small := 3
       or     big   := 5
       or     small := 0
@@ -21,7 +18,7 @@ Min(m,n) == IF m < n THEN m ELSE n
                big := big - (a - small);
                small := a;
              }
-    };
+    }
   }
 }
 *)
@@ -58,5 +55,5 @@ TypeOK == /\ small \in 0..3
 NotSolved == big # 4
 =============================================================================
 \* Modification History
-\* Last modified Thu Dec 17 22:52:48 CST 2020 by Administrator
+\* Last modified Thu Dec 17 23:15:33 CST 2020 by Administrator
 \* Created Thu Dec 17 20:42:43 CST 2020 by Administrator

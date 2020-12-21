@@ -1,19 +1,19 @@
 @!@!@STARTMSG 2262:0 @!@!@
-TLC2 Version 2.15 of Day Month 20?? (rev: e389d55)
+TLC2 Version 2.15 of Day Month 20?? (rev: 8f0e040b)
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
-Running breadth-first search Model-Checking with fp 104 and seed 1641912885477110023 with 6 workers on 12 cores with 1211MB heap and 2721MB offheap memory [pid: 8912] (Windows 10 10.0 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+Running breadth-first search Model-Checking with fp 21 and seed -1945867943280881200 with 6 workers on 12 cores with 1211MB heap and 2721MB offheap memory [pid: 3692] (Windows 10 10.0 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
 @!@!@ENDMSG 2187 @!@!@
 @!@!@STARTMSG 2220:0 @!@!@
 Starting SANY...
 @!@!@ENDMSG 2220 @!@!@
-Parsing file C:\toolbox\projects\water_bottles.toolbox\water_bottles\MC.tla
-Parsing file C:\toolbox\projects\water_bottles.toolbox\water_bottles\water_bottles.tla
-Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202011242241\tla2sany\StandardModules\TLC.tla
-Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202011242241\tla2sany\StandardModules\Integers.tla
-Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202011242241\tla2sany\StandardModules\Naturals.tla
-Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202011242241\tla2sany\StandardModules\Sequences.tla
-Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202011242241\tla2sany\StandardModules\FiniteSets.tla
+Parsing file D:\tla+projects\water_bottles.toolbox\water_bottles\MC.tla
+Parsing file D:\tla+projects\water_bottles.toolbox\water_bottles\water_bottles.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012182350\tla2sany\StandardModules\TLC.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012182350\tla2sany\StandardModules\Integers.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012182350\tla2sany\StandardModules\Naturals.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012182350\tla2sany\StandardModules\Sequences.tla
+Parsing file C:\cygwin\usr\local\lib\tlaps\FiniteSets.tla
 Semantic processing of module Naturals
 Semantic processing of module Integers
 Semantic processing of module water_bottles
@@ -25,13 +25,13 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2020-12-05 21:11:54)
+Starting... (2020-12-19 21:04:53)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2189:0 @!@!@
 Computing initial states...
 @!@!@ENDMSG 2189 @!@!@
 @!@!@STARTMSG 2190:0 @!@!@
-Finished computing initial states: 1 distinct state generated at 2020-12-05 21:11:54.
+Finished computing initial states: 1 distinct state generated at 2020-12-19 21:04:54.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2110:1 @!@!@
 Invariant NoFoundSolution is violated.
@@ -82,7 +82,7 @@ The behavior up to this point is:
 
 @!@!@ENDMSG 2217 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2020-12-05 21:11:54
+The coverage statistics at 2020-12-19 21:04:54
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2773:0 @!@!@
 <Init line 124, col 1 to line 124, col 4 of module water_bottles>: 2:2
@@ -172,7 +172,7 @@ The coverage statistics at 2020-12-05 21:11:54
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(9) at 2020-12-05 21:11:54: 84 states generated (7,039 s/min), 16 distinct states found (1,340 ds/min), 0 states left on queue.
+Progress(9) at 2020-12-19 21:04:54: 84 states generated (5,266 s/min), 16 distinct states found (1,003 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 84 states generated, 16 distinct states found, 0 states left on queue.
@@ -181,5 +181,5 @@ Progress(9) at 2020-12-05 21:11:54: 84 states generated (7,039 s/min), 16 distin
 The depth of the complete state graph search is 9.
 @!@!@ENDMSG 2194 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished in 719ms at (2020-12-05 21:11:54)
+Finished in 960ms at (2020-12-19 21:04:54)
 @!@!@ENDMSG 2186 @!@!@

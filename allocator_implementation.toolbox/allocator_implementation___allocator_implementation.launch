@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.lamport.tla.toolbox.tool.tlc.modelCheck">
+    <stringAttribute key="configurationName" value="allocator_implementation"/>
+    <intAttribute key="distributedFPSetCount" value="0"/>
+    <stringAttribute key="distributedNetworkInterface" value="192.168.3.2"/>
+    <intAttribute key="distributedNodesCount" value="1"/>
+    <stringAttribute key="distributedTLC" value="off"/>
+    <intAttribute key="fpIndex" value="49"/>
+    <intAttribute key="maxHeapSize" value="25"/>
+    <stringAttribute key="modelBehaviorInit" value="Init"/>
+    <stringAttribute key="modelBehaviorNext" value="Next"/>
+    <stringAttribute key="modelBehaviorSpec" value="Specification"/>
+    <intAttribute key="modelBehaviorSpecType" value="1"/>
+    <stringAttribute key="modelBehaviorVars" value="holding, alloc, requests, sched, network, unsat"/>
+    <stringAttribute key="modelComments" value=""/>
+    <booleanAttribute key="modelCorrectnessCheckDeadlock" value="true"/>
+    <listAttribute key="modelCorrectnessInvariants">
+        <listEntry value="1TypeInvariant"/>
+        <listEntry value="1ResourceMutex"/>
+        <listEntry value="1Invariant"/>
+    </listAttribute>
+    <listAttribute key="modelCorrectnessProperties">
+        <listEntry value="1SchedAllocator"/>
+        <listEntry value="0ClientsWillReturn"/>
+        <listEntry value="0InfOftenSatisfied"/>
+        <listEntry value="0ClientsWillObtain"/>
+    </listAttribute>
+    <intAttribute key="modelEditorOpenTabs" value="8"/>
+    <listAttribute key="modelParameterConstants">
+        <listEntry value="Resources;;{c1, c2, c3};1;0"/>
+        <listEntry value="Clients;;{r1, r2};1;0"/>
+    </listAttribute>
+    <intAttribute key="modelVersion" value="20191005"/>
+    <intAttribute key="numberOfWorkers" value="6"/>
+    <stringAttribute key="result.mail.address" value=""/>
+    <stringAttribute key="specName" value="allocator_implementation"/>
+    <stringAttribute key="tlcResourcesProfile" value="local custom"/>
+</launchConfiguration>

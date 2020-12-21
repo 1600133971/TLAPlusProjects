@@ -16,6 +16,11 @@
 	</natures>
 	<linkedResources>
 		<link>
+			<name>FunctionsExt.tla</name>
+			<type>1</type>
+			<location>D:/tla+projects/FunctionsExt.tla</location>
+		</link>
+		<link>
 			<name>diehard_pluscal.tla</name>
 			<type>1</type>
 			<locationURI>PARENT-1-PROJECT_LOC/diehard_pluscal.tla</locationURI>

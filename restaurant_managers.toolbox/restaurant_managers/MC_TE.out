@@ -1,0 +1,524 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.15 of Day Month 20?? (rev: 8f0e040b)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 39 and seed -2267557013894118430 with 6 workers on 12 cores with 1211MB heap and 2721MB offheap memory [pid: 1316] (Windows 10 10.0 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file D:\tla+projects\restaurant_managers.toolbox\restaurant_managers\MC.tla
+Parsing file D:\tla+projects\restaurant_managers.toolbox\restaurant_managers\restaurant_managers.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012182350\tla2sany\StandardModules\TLC.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012182350\tla2sany\StandardModules\Naturals.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012182350\tla2sany\StandardModules\Sequences.tla
+Parsing file C:\cygwin\usr\local\lib\tlaps\FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module restaurant_managers
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2020-12-21 23:02:26)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2212:0 @!@!@
+Implied-temporal checking--satisfiability problem has 1 branches.
+@!@!@ENDMSG 2212 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2020-12-21 23:02:27.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(20) at 2020-12-21 23:02:27: 718 states generated, 296 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2192:0 @!@!@
+Checking temporal properties for the complete state space with 296 total distinct states at (2020-12-21 23:02:27)
+@!@!@ENDMSG 2192 @!@!@
+@!@!@STARTMSG 2116:1 @!@!@
+Temporal properties were violated.
+
+@!@!@ENDMSG 2116 @!@!@
+@!@!@STARTMSG 2264:1 @!@!@
+The following behavior constitutes a counter-example:
+
+@!@!@ENDMSG 2264 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ restaurant_stage = [bob |-> "start", chuck |-> "start", dave |-> "start"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = FALSE
+/\ k = {}
+/\ pc = [alice |-> "n", bob |-> "c", chuck |-> "c", dave |-> "c"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <n line 99, col 6 to line 102, col 59 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "start", chuck |-> "start", dave |-> "start"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = FALSE
+/\ k = {"bob", "chuck", "dave"}
+/\ pc = [alice |-> "n2", bob |-> "c", chuck |-> "c", dave |-> "c"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <n2 line 104, col 7 to line 113, col 42 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "start", chuck |-> "start", dave |-> "propose"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = FALSE
+/\ k = {"bob", "chuck"}
+/\ pc = [alice |-> "n2", bob |-> "c", chuck |-> "c", dave |-> "c"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <n2 line 104, col 7 to line 113, col 42 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "propose", chuck |-> "start", dave |-> "propose"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = FALSE
+/\ k = {"chuck"}
+/\ pc = [alice |-> "n2", bob |-> "c", chuck |-> "c", dave |-> "c"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <n2 line 104, col 7 to line 113, col 42 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "propose", chuck |-> "propose", dave |-> "propose"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = FALSE
+/\ k = {}
+/\ pc = [alice |-> "n2", bob |-> "c", chuck |-> "c", dave |-> "c"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <Next line 160, col 16 to line 160, col 53 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "accept", chuck |-> "propose", dave |-> "propose"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = FALSE
+/\ k = {}
+/\ pc = [alice |-> "n2", bob |-> "c1", chuck |-> "c", dave |-> "c"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <n2 line 104, col 7 to line 113, col 42 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "accept", chuck |-> "propose", dave |-> "propose"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = FALSE
+/\ k = {"bob", "chuck", "dave"}
+/\ pc = [alice |-> "n3", bob |-> "c1", chuck |-> "c", dave |-> "c"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <Next line 160, col 16 to line 160, col 53 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "accept", chuck |-> "propose", dave |-> "refuse"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = FALSE
+/\ k = {"bob", "chuck", "dave"}
+/\ pc = [alice |-> "n3", bob |-> "c1", chuck |-> "c", dave |-> "c1"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <Next line 160, col 16 to line 160, col 53 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "accept", chuck |-> "refuse", dave |-> "refuse"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = FALSE
+/\ k = {"bob", "chuck", "dave"}
+/\ pc = [alice |-> "n3", bob |-> "c1", chuck |-> "c1", dave |-> "c1"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <n3 line 115, col 7 to line 131, col 51 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "accept", chuck |-> "refuse", dave |-> "refuse"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = TRUE
+/\ k = {"bob", "chuck"}
+/\ pc = [alice |-> "n3", bob |-> "c1", chuck |-> "c1", dave |-> "c1"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+11: <n3 line 115, col 7 to line 131, col 51 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "accept", chuck |-> "refuse", dave |-> "refuse"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = TRUE
+/\ k = {"bob"}
+/\ pc = [alice |-> "n3", bob |-> "c1", chuck |-> "c1", dave |-> "c1"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+12: <n3 line 115, col 7 to line 131, col 51 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "accept", chuck |-> "refuse", dave |-> "refuse"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = TRUE
+/\ k = {}
+/\ pc = [alice |-> "n3", bob |-> "c1", chuck |-> "c1", dave |-> "c1"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+13: <n3 line 115, col 7 to line 131, col 51 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "accept", chuck |-> "refuse", dave |-> "refuse"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = TRUE
+/\ k = {"bob", "chuck", "dave"}
+/\ pc = [alice |-> "n6", bob |-> "c1", chuck |-> "c1", dave |-> "c1"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+14: <n6 line 133, col 7 to line 141, col 42 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "accept", chuck |-> "refuse", dave |-> "abort"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = TRUE
+/\ k = {"bob", "chuck"}
+/\ pc = [alice |-> "n6", bob |-> "c1", chuck |-> "c1", dave |-> "c1"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+15: <n6 line 133, col 7 to line 141, col 42 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "abort", chuck |-> "refuse", dave |-> "abort"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = TRUE
+/\ k = {"chuck"}
+/\ pc = [alice |-> "n6", bob |-> "c1", chuck |-> "c1", dave |-> "c1"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+16: <n6 line 133, col 7 to line 141, col 42 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "abort", chuck |-> "abort", dave |-> "abort"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = TRUE
+/\ k = {}
+/\ pc = [alice |-> "n6", bob |-> "c1", chuck |-> "c1", dave |-> "c1"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+17: <Next line 160, col 16 to line 160, col 53 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "aborted", chuck |-> "abort", dave |-> "abort"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = TRUE
+/\ k = {}
+/\ pc = [alice |-> "n6", bob |-> "Done", chuck |-> "c1", dave |-> "c1"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+18: <n6 line 133, col 7 to line 141, col 42 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "aborted", chuck |-> "abort", dave |-> "abort"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = TRUE
+/\ k = {}
+/\ pc = [alice |-> "Done", bob |-> "Done", chuck |-> "c1", dave |-> "c1"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+19: <Next line 160, col 16 to line 160, col 53 of module restaurant_managers>
+/\ restaurant_stage = [bob |-> "aborted", chuck |-> "aborted", dave |-> "abort"]
+/\ managers = {"bob", "chuck", "dave"}
+/\ aborted = TRUE
+/\ k = {}
+/\ pc = [alice |-> "Done", bob |-> "Done", chuck |-> "Done", dave |-> "c1"]
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2218:4 @!@!@
+20: Stuttering
+@!@!@ENDMSG 2218 @!@!@
+@!@!@STARTMSG 2267:0 @!@!@
+Finished checking temporal properties in 00s at 2020-12-21 23:02:27
+@!@!@ENDMSG 2267 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2020-12-21 23:02:27
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 72, col 1 to line 72, col 4 of module restaurant_managers>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 73, col 9 to line 79, col 65 of module restaurant_managers: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<n line 99, col 1 to line 99, col 1 of module restaurant_managers>: 1:3
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 99, col 9 to line 99, col 25 of module restaurant_managers: 320
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 99, col 9 to line 99, col 19 of module restaurant_managers: 317
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 100, col 9 to line 100, col 21 of module restaurant_managers: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 101, col 9 to line 101, col 43 of module restaurant_managers: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 102, col 9 to line 102, col 59 of module restaurant_managers: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<n2 line 104, col 1 to line 104, col 2 of module restaurant_managers>: 8:86
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 104, col 10 to line 104, col 27 of module restaurant_managers: 387
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 104, col 10 to line 104, col 20 of module restaurant_managers: 316
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 105, col 13 to line 105, col 18 of module restaurant_managers: 71
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 107, col 23 to line 108, col 37 of module restaurant_managers: 57
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 106, col 30 to line 106, col 30 of module restaurant_managers: 42
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 109, col 21 to line 109, col 55 of module restaurant_managers: 57
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 110, col 21 to line 110, col 33 of module restaurant_managers: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 111, col 21 to line 111, col 55 of module restaurant_managers: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 112, col 21 to line 112, col 46 of module restaurant_managers: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 113, col 10 to line 113, col 42 of module restaurant_managers: 86
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<n3 line 115, col 1 to line 115, col 2 of module restaurant_managers>: 51:168
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 115, col 10 to line 115, col 27 of module restaurant_managers: 424
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 115, col 10 to line 115, col 20 of module restaurant_managers: 312
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 116, col 13 to line 116, col 18 of module restaurant_managers: 131
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 118, col 30 to line 118, col 59 of module restaurant_managers: 317
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 118, col 30 to line 118, col 48 of module restaurant_managers: 237
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 119, col 30 to line 119, col 59 of module restaurant_managers: 316
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 119, col 30 to line 119, col 48 of module restaurant_managers: 237
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 120, col 29 to line 120, col 58 of module restaurant_managers: 159
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 121, col 34 to line 121, col 51 of module restaurant_managers: 79
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 122, col 37 to line 122, col 40 of module restaurant_managers: 80
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 123, col 37 to line 123, col 53 of module restaurant_managers: 80
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 124, col 26 to line 124, col 37 of module restaurant_managers: 159
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 117, col 30 to line 117, col 30 of module restaurant_managers: 122
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 125, col 21 to line 125, col 55 of module restaurant_managers: 159
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 126, col 21 to line 126, col 33 of module restaurant_managers: 9
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 127, col 24 to line 127, col 37 of module restaurant_managers: 9
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 128, col 29 to line 128, col 66 of module restaurant_managers: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 129, col 29 to line 129, col 66 of module restaurant_managers: 1
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 130, col 21 to line 130, col 37 of module restaurant_managers: 9
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 131, col 10 to line 131, col 51 of module restaurant_managers: 168
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<n6 line 133, col 1 to line 133, col 2 of module restaurant_managers>: 24:109
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 133, col 10 to line 133, col 27 of module restaurant_managers: 376
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 133, col 10 to line 133, col 20 of module restaurant_managers: 308
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 134, col 13 to line 134, col 18 of module restaurant_managers: 68
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 136, col 23 to line 137, col 37 of module restaurant_managers: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 135, col 30 to line 135, col 30 of module restaurant_managers: 58
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 138, col 21 to line 138, col 55 of module restaurant_managers: 99
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 139, col 21 to line 139, col 57 of module restaurant_managers: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 140, col 21 to line 140, col 55 of module restaurant_managers: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 141, col 10 to line 141, col 42 of module restaurant_managers: 109
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<n4 line 143, col 1 to line 143, col 2 of module restaurant_managers>: 10:35
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 143, col 10 to line 143, col 27 of module restaurant_managers: 331
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 143, col 10 to line 143, col 20 of module restaurant_managers: 304
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 144, col 13 to line 144, col 18 of module restaurant_managers: 27
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 146, col 23 to line 147, col 37 of module restaurant_managers: 27
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 145, col 30 to line 145, col 30 of module restaurant_managers: 19
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 148, col 21 to line 148, col 55 of module restaurant_managers: 27
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 149, col 21 to line 149, col 57 of module restaurant_managers: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 150, col 21 to line 150, col 55 of module restaurant_managers: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 151, col 10 to line 151, col 42 of module restaurant_managers: 35
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Terminating line 156, col 1 to line 156, col 11 of module restaurant_managers>: 0:2
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 156, col 40 to line 156, col 56 of module restaurant_managers: 335
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 156, col 40 to line 156, col 47 of module restaurant_managers: 327
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 156, col 31 to line 156, col 37 of module restaurant_managers: 299
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 157, col 19 to line 157, col 32 of module restaurant_managers: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Next line 159, col 1 to line 159, col 4 of module restaurant_managers (160 16 160 53)>: 201:368
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 81, col 15 to line 81, col 28 of module restaurant_managers: 1044
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 81, col 15 to line 81, col 22 of module restaurant_managers: 912
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 82, col 15 to line 82, col 48 of module restaurant_managers: 321
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 82, col 15 to line 82, col 36 of module restaurant_managers: 189
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 83, col 15 to line 84, col 84 of module restaurant_managers: 132
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 85, col 15 to line 85, col 46 of module restaurant_managers: 264
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 86, col 15 to line 86, col 50 of module restaurant_managers: 264
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 97, col 23 to line 97, col 26 of module restaurant_managers: 912
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 88, col 16 to line 88, col 30 of module restaurant_managers: 1016
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 88, col 16 to line 88, col 23 of module restaurant_managers: 912
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 20 to line 89, col 52 of module restaurant_managers: 662
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 89, col 20 to line 89, col 41 of module restaurant_managers: 623
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 90, col 20 to line 90, col 51 of module restaurant_managers: 688
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 90, col 20 to line 90, col 41 of module restaurant_managers: 623
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 91, col 19 to line 91, col 51 of module restaurant_managers: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 92, col 24 to line 92, col 93 of module restaurant_managers: 39
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 93, col 24 to line 93, col 91 of module restaurant_managers: 65
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 94, col 16 to line 94, col 49 of module restaurant_managers: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 95, col 16 to line 95, col 51 of module restaurant_managers: 104
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 97, col 35 to line 97, col 38 of module restaurant_managers: 912
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 160, col 49 to line 160, col 52 of module restaurant_managers: 912
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 160, col 28 to line 160, col 35 of module restaurant_managers: 304
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<StateOK line 168, col 1 to line 168, col 7 of module restaurant_managers>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 168, col 12 to line 169, col 75 of module restaurant_managers: 296
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 168, col 16 to line 169, col 74 of module restaurant_managers: 296
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 168, col 35 to line 169, col 74 of module restaurant_managers: 888
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 168, col 25 to line 168, col 32 of module restaurant_managers: 296
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(20) at 2020-12-21 23:02:27: 718 states generated (45,976 s/min), 296 distinct states found (18,954 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+718 states generated, 296 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 20.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 942ms at (2020-12-21 23:02:27)
+@!@!@ENDMSG 2186 @!@!@
