@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.lamport.tla.toolbox.tool.tlc.modelCheck">
+    <stringAttribute key="configurationName" value="QubesDB"/>
+    <intAttribute key="distributedFPSetCount" value="0"/>
+    <stringAttribute key="distributedNetworkInterface" value="192.168.3.2"/>
+    <intAttribute key="distributedNodesCount" value="1"/>
+    <stringAttribute key="distributedTLC" value="off"/>
+    <intAttribute key="maxHeapSize" value="25"/>
+    <stringAttribute key="modelBehaviorInit" value=""/>
+    <stringAttribute key="modelBehaviorNext" value=""/>
+    <stringAttribute key="modelBehaviorSpec" value="Spec"/>
+    <intAttribute key="modelBehaviorSpecType" value="1"/>
+    <stringAttribute key="modelBehaviorVars" value="NotifyWrite, DataReadyInt, Buffer, msg, SpaceAvailableInt, Got, SenderLive, ReceiverLive, pc, free, have, Sent, NotifyRead"/>
+    <stringAttribute key="modelComments" value="https://roscidus.com/blog/blog/2019/01/01/using-tla-plus-to-understand-xen-vchan/"/>
+    <booleanAttribute key="modelCorrectnessCheckDeadlock" value="true"/>
+    <listAttribute key="modelCorrectnessInvariants">
+        <listEntry value="1Integrity"/>
+        <listEntry value="1TypeOK"/>
+        <listEntry value="1PCOK"/>
+        <listEntry value="1IntegrityI"/>
+    </listAttribute>
+    <listAttribute key="modelCorrectnessProperties">
+        <listEntry value="0Termination"/>
+        <listEntry value="1Availability"/>
+        <listEntry value="1ReadLimitCorrect"/>
+        <listEntry value="1WriteLimitCorrect"/>
+        <listEntry value="1ShutdownOK"/>
+    </listAttribute>
+    <listAttribute key="modelParameterConstants">
+        <listEntry value="MaxWriteLen;;2;0;0"/>
+        <listEntry value="BufferSize;;2;0;0"/>
+        <listEntry value="ReceiverBlocksFirst;;TRUE;0;0"/>
+        <listEntry value="MaxReadLen;;2;0;0"/>
+        <listEntry value="Byte;;ZeroToFive;0;0"/>
+    </listAttribute>
+    <intAttribute key="modelVersion" value="20191005"/>
+    <intAttribute key="numberOfWorkers" value="6"/>
+    <stringAttribute key="result.mail.address" value=""/>
+    <stringAttribute key="specName" value="vchan"/>
+    <stringAttribute key="tlcResourcesProfile" value="local custom"/>
+</launchConfiguration>

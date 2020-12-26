@@ -1,0 +1,120 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.15 of Day Month 20?? (rev: 732487b)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 55 and seed -290645664427560 with 6 workers on 12 cores with 1211MB heap and 2721MB offheap memory [pid: 11828] (Windows 10 10.0 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file D:\tla+projects\liveness_fairness.toolbox\1\MC.tla
+Parsing file D:\tla+projects\liveness_fairness.toolbox\1\liveness_fairness.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012220629\tla2sany\StandardModules\TLC.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012220629\tla2sany\StandardModules\Naturals.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012220629\tla2sany\StandardModules\Sequences.tla
+Parsing file C:\cygwin\usr\local\lib\tlaps\FiniteSets.tla
+Semantic processing of module liveness_fairness
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2020-12-26 16:39:50)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2212:0 @!@!@
+Implied-temporal checking--satisfiability problem has 1 branches.
+@!@!@ENDMSG 2212 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2020-12-26 16:39:51.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(3) at 2020-12-26 16:39:51: 3 states generated, 3 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2192:0 @!@!@
+Checking temporal properties for the complete state space with 3 total distinct states at (2020-12-26 16:39:51)
+@!@!@ENDMSG 2192 @!@!@
+@!@!@STARTMSG 2116:1 @!@!@
+Temporal properties were violated.
+
+@!@!@ENDMSG 2116 @!@!@
+@!@!@STARTMSG 2264:1 @!@!@
+The following behavior constitutes a counter-example:
+
+@!@!@ENDMSG 2264 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+state = "a"
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <AToB line 6, col 9 to line 6, col 35 of module liveness_fairness>
+state = "b"
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2218:4 @!@!@
+3: Stuttering
+@!@!@ENDMSG 2218 @!@!@
+@!@!@STARTMSG 2267:0 @!@!@
+Finished checking temporal properties in 00s at 2020-12-26 16:39:51
+@!@!@ENDMSG 2267 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2020-12-26 16:39:51
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 4, col 1 to line 4, col 4 of module liveness_fairness>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 4, col 9 to line 4, col 19 of module liveness_fairness: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<AToB line 6, col 1 to line 6, col 4 of module liveness_fairness>: 1:2
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 6, col 9 to line 6, col 19 of module liveness_fairness: 7
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 6, col 9 to line 6, col 13 of module liveness_fairness: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 6, col 24 to line 6, col 35 of module liveness_fairness: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<BToC line 8, col 1 to line 8, col 4 of module liveness_fairness>: 1:2
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 8, col 9 to line 8, col 19 of module liveness_fairness: 6
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 8, col 9 to line 8, col 13 of module liveness_fairness: 4
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 8, col 24 to line 8, col 35 of module liveness_fairness: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<Invariant line 17, col 1 to line 17, col 9 of module liveness_fairness>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 17, col 14 to line 17, col 38 of module liveness_fairness: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(3) at 2020-12-26 16:39:51: 3 states generated (177 s/min), 3 distinct states found (177 ds/min), 0 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+3 states generated, 3 distinct states found, 0 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 3.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 1019ms at (2020-12-26 16:39:51)
+@!@!@ENDMSG 2186 @!@!@
