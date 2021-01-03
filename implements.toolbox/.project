@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>implements</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>toolbox.builder.TLAParserBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>toolbox.natures.TLANature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>implements.tla</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/implements.tla</locationURI>
+		</link>
+		<link>
+			<name>implementsA.tla</name>
+			<type>1</type>
+			<location>D:/tla+projects/implementsA.tla</location>
+		</link>
+	</linkedResources>
+</projectDescription>
