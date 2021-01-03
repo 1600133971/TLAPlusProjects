@@ -1,8 +1,8 @@
 @!@!@STARTMSG 2262:0 @!@!@
-TLC2 Version 2.15 of Day Month 20?? (rev: 68d4252)
+TLC2 Version 2.15 of Day Month 20?? (rev: cf69db9)
 @!@!@ENDMSG 2262 @!@!@
 @!@!@STARTMSG 2187:0 @!@!@
-Running breadth-first search Model-Checking with fp 84 and seed -2743656497035353015 with 6 workers on 12 cores with 1211MB heap and 2721MB offheap memory [pid: 17736] (Windows 10 10.0 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+Running breadth-first search Model-Checking with fp 4 and seed 8275588568585611641 with 6 workers on 12 cores with 1211MB heap and 2721MB offheap memory [pid: 7312] (Windows 10 10.0 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
 @!@!@ENDMSG 2187 @!@!@
 @!@!@STARTMSG 2220:0 @!@!@
 Starting SANY...
@@ -10,10 +10,10 @@ Starting SANY...
 Parsing file D:\tla+projects\allocator_pluscal.toolbox\allocator_pluscal\MC.tla
 Parsing file D:\tla+projects\allocator_pluscal.toolbox\allocator_pluscal\allocator_pluscal.tla
 Labels added.
-Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012110300\tla2sany\StandardModules\TLC.tla
-Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012110300\tla2sany\StandardModules\Naturals.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012272159\tla2sany\StandardModules\TLC.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012272159\tla2sany\StandardModules\Naturals.tla
 Parsing file C:\cygwin\usr\local\lib\tlaps\FiniteSets.tla
-Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012110300\tla2sany\StandardModules\Sequences.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012272159\tla2sany\StandardModules\Sequences.tla
 Semantic processing of module Naturals
 Semantic processing of module Sequences
 Semantic processing of module FiniteSets
@@ -24,7 +24,7 @@ Semantic processing of module MC
 SANY finished.
 @!@!@ENDMSG 2219 @!@!@
 @!@!@STARTMSG 2185:0 @!@!@
-Starting... (2020-12-18 22:08:01)
+Starting... (2021-01-01 13:45:54)
 @!@!@ENDMSG 2185 @!@!@
 @!@!@STARTMSG 2212:0 @!@!@
 Implied-temporal checking--satisfiability problem has 10 branches.
@@ -33,16 +33,16 @@ Implied-temporal checking--satisfiability problem has 10 branches.
 Computing initial states...
 @!@!@ENDMSG 2189 @!@!@
 @!@!@STARTMSG 2190:0 @!@!@
-Finished computing initial states: 1 distinct state generated at 2020-12-18 22:08:02.
+Finished computing initial states: 1 distinct state generated at 2021-01-01 13:45:55.
 @!@!@ENDMSG 2190 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(6) at 2020-12-18 22:08:02: 4,801 states generated, 400 distinct states found, 0 states left on queue.
+Progress(6) at 2021-01-01 13:45:55: 4,801 states generated, 400 distinct states found, 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2192:0 @!@!@
-Checking 10 branches of temporal properties for the complete state space with 4000 total distinct states at (2020-12-18 22:08:02)
+Checking 10 branches of temporal properties for the complete state space with 4000 total distinct states at (2021-01-01 13:45:55)
 @!@!@ENDMSG 2192 @!@!@
 @!@!@STARTMSG 2267:0 @!@!@
-Finished checking temporal properties in 00s at 2020-12-18 22:08:02
+Finished checking temporal properties in 00s at 2021-01-01 13:45:55
 @!@!@ENDMSG 2267 @!@!@
 @!@!@STARTMSG 2193:0 @!@!@
 Model checking completed. No error has been found.
@@ -51,124 +51,124 @@ Model checking completed. No error has been found.
   calculated (optimistic):  val = 9.5E-14
 @!@!@ENDMSG 2193 @!@!@
 @!@!@STARTMSG 2201:0 @!@!@
-The coverage statistics at 2020-12-18 22:08:02
+The coverage statistics at 2021-01-01 13:45:55
 @!@!@ENDMSG 2201 @!@!@
 @!@!@STARTMSG 2773:0 @!@!@
-<Init line 74, col 1 to line 74, col 4 of module allocator_pluscal>: 1:1
+<Init line 75, col 1 to line 75, col 4 of module allocator_pluscal>: 1:1
 @!@!@ENDMSG 2773 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 75, col 9 to line 76, col 41 of module allocator_pluscal: 1
+  line 76, col 9 to line 77, col 41 of module allocator_pluscal: 1
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2772:0 @!@!@
-<Next line 78, col 1 to line 78, col 4 of module allocator_pluscal (80 13 90 48)>: 399:6972
+<Next line 79, col 1 to line 79, col 4 of module allocator_pluscal (81 13 91 48)>: 399:6324
 @!@!@ENDMSG 2772 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 80, col 16 to line 80, col 55 of module allocator_pluscal: 6972
+  line 81, col 16 to line 81, col 55 of module allocator_pluscal: 6324
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 80, col 16 to line 80, col 45 of module allocator_pluscal: 6972
+  |line 81, col 16 to line 81, col 45 of module allocator_pluscal: 6324
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 80, col 16 to line 80, col 28 of module allocator_pluscal: 6972
+  ||line 81, col 16 to line 81, col 28 of module allocator_pluscal: 6324
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 80, col 33 to line 80, col 45 of module allocator_pluscal: 3020
+  ||line 81, col 33 to line 81, col 45 of module allocator_pluscal: 2708
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 80, col 50 to line 80, col 55 of module allocator_pluscal: 1840
+  |line 81, col 50 to line 81, col 55 of module allocator_pluscal: 1660
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 81, col 21 to line 82, col 37 of module allocator_pluscal: 1380
+  line 82, col 21 to line 83, col 37 of module allocator_pluscal: 1245
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 83, col 27 to line 83, col 71 of module allocator_pluscal: 5592
+  line 84, col 27 to line 84, col 71 of module allocator_pluscal: 5079
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 83, col 27 to line 83, col 32 of module allocator_pluscal: 5592
+  |line 84, col 27 to line 84, col 32 of module allocator_pluscal: 5079
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 83, col 37 to line 83, col 71 of module allocator_pluscal: 3849
+  |line 84, col 37 to line 84, col 71 of module allocator_pluscal: 3498
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 83, col 37 to line 83, col 37 of module allocator_pluscal: 3849
+  ||line 84, col 37 to line 84, col 37 of module allocator_pluscal: 3498
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 83, col 49 to line 83, col 71 of module allocator_pluscal: 3849
+  ||line 84, col 49 to line 84, col 71 of module allocator_pluscal: 3498
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||line 83, col 49 to line 83, col 57 of module allocator_pluscal: 3849
+  |||line 84, col 49 to line 84, col 57 of module allocator_pluscal: 3498
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||||line 54, col 14 to line 54, col 59 of module allocator_pluscal: 3849
+  ||||line 55, col 14 to line 55, col 59 of module allocator_pluscal: 3498
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||||line 54, col 14 to line 54, col 22 of module allocator_pluscal: 3849
+  |||||line 55, col 14 to line 55, col 22 of module allocator_pluscal: 3498
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||||line 54, col 27 to line 54, col 58 of module allocator_pluscal: 3849
+  |||||line 55, col 27 to line 55, col 58 of module allocator_pluscal: 3498
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||||||line 54, col 33 to line 54, col 58 of module allocator_pluscal: 3849
+  ||||||line 55, col 33 to line 55, col 58 of module allocator_pluscal: 3498
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||||||line 54, col 34 to line 54, col 41 of module allocator_pluscal: 11547
+  |||||||line 55, col 34 to line 55, col 41 of module allocator_pluscal: 10494
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||||||line 54, col 51 to line 54, col 57 of module allocator_pluscal: 3849
+  |||||||line 55, col 51 to line 55, col 57 of module allocator_pluscal: 3498
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |||line 83, col 64 to line 83, col 71 of module allocator_pluscal: 3849
+  |||line 84, col 64 to line 84, col 71 of module allocator_pluscal: 3498
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 84, col 32 to line 85, col 77 of module allocator_pluscal: 789
+  line 85, col 32 to line 86, col 77 of module allocator_pluscal: 694
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 86, col 38 to line 86, col 67 of module allocator_pluscal: 4803
+  line 87, col 38 to line 87, col 67 of module allocator_pluscal: 4385
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 86, col 38 to line 86, col 43 of module allocator_pluscal: 4803
+  |line 87, col 38 to line 87, col 43 of module allocator_pluscal: 4385
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 86, col 48 to line 86, col 67 of module allocator_pluscal: 3060
+  |line 87, col 48 to line 87, col 67 of module allocator_pluscal: 2804
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 87, col 43 to line 87, col 88 of module allocator_pluscal: 603
+  line 88, col 43 to line 88, col 88 of module allocator_pluscal: 576
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 88, col 43 to line 89, col 59 of module allocator_pluscal: 4200
+  line 89, col 43 to line 90, col 59 of module allocator_pluscal: 3809
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 90, col 35 to line 90, col 48 of module allocator_pluscal: 4803
-@!@!@ENDMSG 2221 @!@!@
-@!@!@STARTMSG 2774:0 @!@!@
-<TypeInvariant line 96, col 1 to line 96, col 13 of module allocator_pluscal>
-@!@!@ENDMSG 2774 @!@!@
-@!@!@STARTMSG 2221:0 @!@!@
-  line 97, col 3 to line 98, col 44 of module allocator_pluscal: 400
+  line 91, col 35 to line 91, col 48 of module allocator_pluscal: 4385
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2774:0 @!@!@
-<ResourceMutex line 105, col 1 to line 105, col 13 of module allocator_pluscal>
+<TypeInvariant line 97, col 1 to line 97, col 13 of module allocator_pluscal>
 @!@!@ENDMSG 2774 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  line 106, col 3 to line 106, col 65 of module allocator_pluscal: 400
+  line 98, col 3 to line 99, col 44 of module allocator_pluscal: 400
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<ResourceMutex line 106, col 1 to line 106, col 13 of module allocator_pluscal>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 107, col 3 to line 107, col 65 of module allocator_pluscal: 400
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 106, col 26 to line 106, col 65 of module allocator_pluscal: 3600
+  |line 107, col 26 to line 107, col 65 of module allocator_pluscal: 3600
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 106, col 26 to line 106, col 32 of module allocator_pluscal: 3600
+  ||line 107, col 26 to line 107, col 32 of module allocator_pluscal: 3600
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  ||line 106, col 37 to line 106, col 65 of module allocator_pluscal: 2400
+  ||line 107, col 37 to line 107, col 65 of module allocator_pluscal: 2400
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2221:0 @!@!@
-  |line 106, col 16 to line 106, col 22 of module allocator_pluscal: 400
+  |line 107, col 16 to line 107, col 22 of module allocator_pluscal: 400
 @!@!@ENDMSG 2221 @!@!@
 @!@!@STARTMSG 2202:0 @!@!@
 End of statistics.
 @!@!@ENDMSG 2202 @!@!@
 @!@!@STARTMSG 2200:0 @!@!@
-Progress(6) at 2020-12-18 22:08:02: 4,801 states generated (230,263 s/min), 400 distinct states found (19,184 ds/min), 0 states left on queue.
+Progress(6) at 2021-01-01 13:45:55: 4,801 states generated (173,425 s/min), 400 distinct states found (14,449 ds/min), 0 states left on queue.
 @!@!@ENDMSG 2200 @!@!@
 @!@!@STARTMSG 2199:0 @!@!@
 4801 states generated, 400 distinct states found, 0 states left on queue.
@@ -180,5 +180,5 @@ The depth of the complete state graph search is 6.
 The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 9 and the 95th percentile is 4).
 @!@!@ENDMSG 2268 @!@!@
 @!@!@STARTMSG 2186:0 @!@!@
-Finished in 1257ms at (2020-12-18 22:08:02)
+Finished in 1668ms at (2021-01-01 13:45:55)
 @!@!@ENDMSG 2186 @!@!@

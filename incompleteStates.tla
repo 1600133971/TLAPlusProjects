@@ -1,4 +1,4 @@
------------- MODULE incompleteStates -------------
+------------ MODULE IncompleteStates -------------
 EXTENDS TLCExt
 
 VARIABLE u, v, w

@@ -19,5 +19,5 @@ Invariant == state \in {"a", "b", "c"}
 Termination == <>(state = "c")
 =============================================================================
 \* Modification History
-\* Last modified Sat Dec 26 16:38:14 CST 2020 by Administrator
+\* Last modified Mon Dec 28 23:48:22 CST 2020 by Administrator
 \* Created Sat Dec 26 16:33:25 CST 2020 by Administrator

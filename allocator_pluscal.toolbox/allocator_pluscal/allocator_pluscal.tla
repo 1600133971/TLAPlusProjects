@@ -6,7 +6,8 @@ CONSTANTS
   Resources    \* set of all resources
 
 ASSUME
-  IsFiniteSet(Resources)
+  /\ IsFiniteSet(Clients)
+  /\ IsFiniteSet(Resources)
 
 (*
 --algorithm diehard_pluscal {
@@ -116,5 +117,5 @@ InfOftenSatisfied ==
 
 =============================================================================
 \* Modification History
-\* Last modified Fri Dec 18 22:07:35 CST 2020 by Administrator
+\* Last modified Fri Dec 18 22:09:13 CST 2020 by Administrator
 \* Created Thu Dec 17 23:31:37 CST 2020 by Administrator

@@ -1,0 +1,491 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.15 of Day Month 20?? (rev: cf69db9)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 103 and seed -1306168501403950839 with 6 workers on 12 cores with 1211MB heap and 2721MB offheap memory [pid: 1360] (Windows 10 10.0 amd64, AdoptOpenJDK 14.0.1 x86_64, OffHeapDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file D:\tla+projects\syncCon3.toolbox\syncCon3\MC.tla
+Parsing file D:\tla+projects\syncCon3.toolbox\syncCon3\syncCon3.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012272159\tla2sany\StandardModules\TLC.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012272159\tla2sany\StandardModules\Integers.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012272159\tla2sany\StandardModules\Sequences.tla
+Parsing file C:\cygwin\usr\local\lib\tlaps\FiniteSets.tla
+Parsing file C:\toolbox\plugins\org.lamport.tlatools_1.0.0.202012272159\tla2sany\StandardModules\Naturals.tla
+Semantic processing of module Naturals
+Semantic processing of module Integers
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module syncCon3
+Semantic processing of module MC
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2021-01-03 11:19:25)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2212:0 @!@!@
+Implied-temporal checking--satisfiability problem has 1 branches.
+@!@!@ENDMSG 2212 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2021-01-03 11:19:25.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2114:1 @!@!@
+Deadlock reached.
+@!@!@ENDMSG 2114 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ mb = <<{}, {}>>
+/\ FailNum = 1
+/\ Q = <<{}, {}>>
+/\ d = <<-1, -1>>
+/\ up = <<TRUE, TRUE>>
+/\ t = <<FALSE, FALSE>>
+/\ pc = <<"P", "P">>
+/\ pmb = <<{}, {}>>
+/\ pt = <<0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <P line 79, col 12 to line 89, col 57 of module syncCon3>
+/\ mb = <<{}, {}>>
+/\ FailNum = 1
+/\ Q = <<1..2, {}>>
+/\ d = <<1, -1>>
+/\ up = <<TRUE, TRUE>>
+/\ t = <<FALSE, FALSE>>
+/\ pc = <<"PS", "P">>
+/\ pmb = <<{}, {}>>
+/\ pt = <<0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <PS line 91, col 13 to line 114, col 40 of module syncCon3>
+/\ mb = <<{1}, {}>>
+/\ FailNum = 0
+/\ Q = <<{2}, {}>>
+/\ d = <<1, -1>>
+/\ up = <<FALSE, TRUE>>
+/\ t = <<FALSE, FALSE>>
+/\ pc = <<"PS", "P">>
+/\ pmb = <<{}, {}>>
+/\ pt = <<0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <PS line 91, col 13 to line 114, col 40 of module syncCon3>
+/\ mb = <<{1}, {}>>
+/\ FailNum = 0
+/\ Q = <<{2}, {}>>
+/\ d = <<1, -1>>
+/\ up = <<FALSE, TRUE>>
+/\ t = <<FALSE, FALSE>>
+/\ pc = <<"PR", "P">>
+/\ pmb = <<{}, {}>>
+/\ pt = <<0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <P line 79, col 12 to line 89, col 57 of module syncCon3>
+/\ mb = <<{1}, {}>>
+/\ FailNum = 0
+/\ Q = <<{2}, 1..2>>
+/\ d = <<1, 2>>
+/\ up = <<FALSE, TRUE>>
+/\ t = <<FALSE, FALSE>>
+/\ pc = <<"PR", "PS">>
+/\ pmb = <<{}, {}>>
+/\ pt = <<0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <PS line 91, col 13 to line 114, col 40 of module syncCon3>
+/\ mb = <<{1, 2}, {}>>
+/\ FailNum = 0
+/\ Q = <<{2}, {2}>>
+/\ d = <<1, 2>>
+/\ up = <<FALSE, TRUE>>
+/\ t = <<FALSE, FALSE>>
+/\ pc = <<"PR", "PS">>
+/\ pmb = <<{}, {}>>
+/\ pt = <<0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <PS line 91, col 13 to line 114, col 40 of module syncCon3>
+/\ mb = <<{1, 2}, {2}>>
+/\ FailNum = 0
+/\ Q = <<{2}, {}>>
+/\ d = <<1, 2>>
+/\ up = <<FALSE, TRUE>>
+/\ t = <<FALSE, FALSE>>
+/\ pc = <<"PR", "PS">>
+/\ pmb = <<{}, {}>>
+/\ pt = <<0, 0>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <PS line 91, col 13 to line 114, col 40 of module syncCon3>
+/\ mb = <<{1, 2}, {2}>>
+/\ FailNum = 0
+/\ Q = <<{2}, {}>>
+/\ d = <<1, 2>>
+/\ up = <<FALSE, TRUE>>
+/\ t = <<FALSE, FALSE>>
+/\ pc = <<"PR", "PR">>
+/\ pmb = <<{}, {}>>
+/\ pt = <<0, 1>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <PR line 116, col 13 to line 126, col 49 of module syncCon3>
+/\ mb = <<{1, 2}, {}>>
+/\ FailNum = 0
+/\ Q = <<{2}, {}>>
+/\ d = <<1, 2>>
+/\ up = <<FALSE, TRUE>>
+/\ t = <<FALSE, FALSE>>
+/\ pc = <<"PR", "P">>
+/\ pmb = <<{}, {2}>>
+/\ pt = <<0, 1>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <P line 79, col 12 to line 89, col 57 of module syncCon3>
+/\ mb = <<{1, 2}, {}>>
+/\ FailNum = 0
+/\ Q = <<{2}, 1..2>>
+/\ d = <<1, 2>>
+/\ up = <<FALSE, TRUE>>
+/\ t = <<FALSE, FALSE>>
+/\ pc = <<"PR", "PS">>
+/\ pmb = <<{}, {2}>>
+/\ pt = <<0, 1>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+11: <PS line 91, col 13 to line 114, col 40 of module syncCon3>
+/\ mb = <<{1, 2}, {}>>
+/\ FailNum = 0
+/\ Q = <<{2}, {2}>>
+/\ d = <<1, 2>>
+/\ up = <<FALSE, TRUE>>
+/\ t = <<FALSE, FALSE>>
+/\ pc = <<"PR", "PS">>
+/\ pmb = <<{}, {2}>>
+/\ pt = <<0, 1>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+12: <PS line 91, col 13 to line 114, col 40 of module syncCon3>
+/\ mb = <<{1, 2}, {2}>>
+/\ FailNum = 0
+/\ Q = <<{2}, {}>>
+/\ d = <<1, 2>>
+/\ up = <<FALSE, TRUE>>
+/\ t = <<FALSE, FALSE>>
+/\ pc = <<"PR", "PS">>
+/\ pmb = <<{}, {2}>>
+/\ pt = <<0, 1>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+13: <PS line 91, col 13 to line 114, col 40 of module syncCon3>
+/\ mb = <<{1, 2}, {2}>>
+/\ FailNum = 0
+/\ Q = <<{2}, {}>>
+/\ d = <<1, 2>>
+/\ up = <<FALSE, TRUE>>
+/\ t = <<FALSE, FALSE>>
+/\ pc = <<"PR", "PR">>
+/\ pmb = <<{}, {2}>>
+/\ pt = <<0, 2>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+14: <PR line 116, col 13 to line 126, col 49 of module syncCon3>
+/\ mb = <<{1, 2}, {}>>
+/\ FailNum = 0
+/\ Q = <<{2}, {}>>
+/\ d = <<1, 2>>
+/\ up = <<FALSE, TRUE>>
+/\ t = <<FALSE, TRUE>>
+/\ pc = <<"PR", "P">>
+/\ pmb = <<{}, {2}>>
+/\ pt = <<0, 2>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+15: <P line 79, col 12 to line 89, col 57 of module syncCon3>
+/\ mb = <<{1, 2}, {}>>
+/\ FailNum = 0
+/\ Q = <<{2}, {}>>
+/\ d = <<1, 2>>
+/\ up = <<FALSE, TRUE>>
+/\ t = <<FALSE, TRUE>>
+/\ pc = <<"PR", "Done">>
+/\ pmb = <<{}, {2}>>
+/\ pt = <<0, 2>>
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2021-01-03 11:19:25
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 67, col 1 to line 67, col 4 of module syncCon3>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 68, col 9 to line 77, col 42 of module syncCon3: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<P line 79, col 1 to line 79, col 7 of module syncCon3>: 52:91
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 79, col 15 to line 79, col 28 of module syncCon3: 720
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 79, col 15 to line 79, col 22 of module syncCon3: 629
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 80, col 18 to line 80, col 37 of module syncCon3: 91
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 81, col 29 to line 81, col 38 of module syncCon3: 82
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 82, col 34 to line 82, col 66 of module syncCon3: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 83, col 34 to line 84, col 42 of module syncCon3: 53
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 85, col 26 to line 85, col 56 of module syncCon3: 82
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 86, col 26 to line 86, col 57 of module syncCon3: 82
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 87, col 26 to line 87, col 59 of module syncCon3: 9
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 88, col 26 to line 88, col 45 of module syncCon3: 9
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 15 to line 89, col 57 of module syncCon3: 91
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<PS line 91, col 1 to line 91, col 8 of module syncCon3>: 264:532
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 91, col 16 to line 91, col 30 of module syncCon3: 979
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 91, col 16 to line 91, col 23 of module syncCon3: 625
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 92, col 19 to line 92, col 42 of module syncCon3: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 92, col 19 to line 92, col 26 of module syncCon3: 354
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 92, col 31 to line 92, col 42 of module syncCon3: 231
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 94, col 35 to line 94, col 59 of module syncCon3: 255
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 94, col 35 to line 94, col 49 of module syncCon3: 255
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 94, col 54 to line 94, col 59 of module syncCon3: 29
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 95, col 40 to line 96, col 81 of module syncCon3: 255
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 98, col 43 to line 98, col 63 of module syncCon3: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 99, col 35 to line 99, col 55 of module syncCon3: 255
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 99, col 35 to line 99, col 43 of module syncCon3: 255
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 99, col 48 to line 99, col 55 of module syncCon3: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 100, col 46 to line 101, col 68 of module syncCon3: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 102, col 49 to line 102, col 52 of module syncCon3: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 103, col 49 to line 103, col 73 of module syncCon3: 107
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 104, col 43 to line 104, col 46 of module syncCon3: 148
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 105, col 43 to line 105, col 69 of module syncCon3: 148
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 93, col 36 to line 93, col 42 of module syncCon3: 184
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 106, col 27 to line 106, col 58 of module syncCon3: 362
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 107, col 27 to line 107, col 34 of module syncCon3: 362
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 108, col 30 to line 108, col 37 of module syncCon3: 170
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 109, col 35 to line 109, col 75 of module syncCon3: 47
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 110, col 35 to line 111, col 45 of module syncCon3: 123
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 112, col 27 to line 112, col 58 of module syncCon3: 170
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 113, col 27 to line 113, col 60 of module syncCon3: 170
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 114, col 16 to line 114, col 40 of module syncCon3: 532
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<PR line 116, col 1 to line 116, col 8 of module syncCon3>: 34:52
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 116, col 16 to line 116, col 30 of module syncCon3: 669
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 116, col 16 to line 116, col 23 of module syncCon3: 617
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 117, col 17 to line 117, col 24 of module syncCon3: 52
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 117, col 17 to line 117, col 18 of module syncCon3: 178
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 117, col 20 to line 117, col 23 of module syncCon3: 178
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 117, col 46 to line 117, col 80 of module syncCon3: 38
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 117, col 47 to line 117, col 60 of module syncCon3: 126
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 117, col 47 to line 117, col 51 of module syncCon3: 126
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 117, col 56 to line 117, col 60 of module syncCon3: 88
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 117, col 66 to line 117, col 80 of module syncCon3: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 117, col 66 to line 117, col 70 of module syncCon3: 88
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 117, col 73 to line 117, col 80 of module syncCon3: 88
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 117, col 39 to line 117, col 43 of module syncCon3: 66
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 118, col 16 to line 118, col 57 of module syncCon3: 52
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 118, col 21 to line 118, col 57 of module syncCon3: 52
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 118, col 22 to line 118, col 22 of module syncCon3: 52
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 118, col 31 to line 118, col 56 of module syncCon3: 52
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 118, col 41 to line 118, col 56 of module syncCon3: 52
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 59, col 14 to line 59, col 49 of module syncCon3: 52
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 59, col 31 to line 59, col 49 of module syncCon3: 52
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 59, col 44 to line 59, col 49 of module syncCon3: 90
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||||line 59, col 40 to line 59, col 40 of module syncCon3: 52
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||||line 59, col 27 to line 59, col 27 of module syncCon3: 52
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 118, col 48 to line 118, col 55 of module syncCon3: 52
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 119, col 19 to line 119, col 36 of module syncCon3: 52
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 120, col 24 to line 120, col 56 of module syncCon3: 9
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 121, col 24 to line 122, col 32 of module syncCon3: 43
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 123, col 16 to line 123, col 53 of module syncCon3: 52
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 124, col 16 to line 124, col 45 of module syncCon3: 52
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 125, col 16 to line 125, col 46 of module syncCon3: 52
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 126, col 16 to line 126, col 49 of module syncCon3: 52
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<Terminating line 131, col 1 to line 131, col 11 of module syncCon3>: 0:0
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 131, col 40 to line 131, col 56 of module syncCon3: 304
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 131, col 31 to line 131, col 37 of module syncCon3: 302
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 132, col 19 to line 132, col 32 of module syncCon3: 0
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(16) at 2021-01-03 11:19:25: 651 states generated (45,471 s/min), 351 distinct states found (24,516 ds/min), 52 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+651 states generated, 351 distinct states found, 52 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 16.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 864ms at (2021-01-03 11:19:25)
+@!@!@ENDMSG 2186 @!@!@
