@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>record_tlaps</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>toolbox.builder.TLAParserBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>toolbox.natures.TLANature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>record_tlaps.tla</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/record_tlaps.tla</locationURI>
+		</link>
+		<link>
+			<name>simple_voting.tla</name>
+			<type>1</type>
+			<location>D:/tla+projects/simple_voting.tla</location>
+		</link>
+	</linkedResources>
+</projectDescription>

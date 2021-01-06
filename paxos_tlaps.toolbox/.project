@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>paxos_tlaps</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>toolbox.builder.TLAParserBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>toolbox.natures.TLANature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>Consensus.tla</name>
+			<type>1</type>
+			<location>D:/tla+projects/Consensus.tla</location>
+		</link>
+		<link>
+			<name>Functions.tla</name>
+			<type>1</type>
+			<location>D:/tla+projects/Functions.tla</location>
+		</link>
+		<link>
+			<name>consensus_tlaps.tla</name>
+			<type>1</type>
+			<location>D:/tla+projects/consensus_tlaps.tla</location>
+		</link>
+		<link>
+			<name>paxos_tlaps.tla</name>
+			<type>1</type>
+			<locationURI>PARENT-1-PROJECT_LOC/paxos_tlaps.tla</locationURI>
+		</link>
+	</linkedResources>
+</projectDescription>
